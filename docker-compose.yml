@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 services:
   caddy:  
     image: joshix/caddy
@@ -21,7 +21,7 @@ services:
     restart: always
 
   netdata:
-    image:titpetric/netdata  
+    image: titpetric/netdata  
     cap_add:
       - SYS_PTRACE
     volumes:
